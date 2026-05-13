@@ -1543,7 +1543,7 @@ blockquote {
   color: #424242;
   letter-spacing: -.01em;
   width: 27rem;
-  margin-bottom: 2.8125rem;
+  margin-bottom: 3.2125rem;
   margin-left: .25rem;
   font-family: Comfortaa Variablefont Wght, Arial, sans-serif;
   font-size: 1.7rem;
@@ -1966,9 +1966,11 @@ blockquote {
 }
 
 .course-pricing-section {
+  z-index: 50;
   background-color: #dcd7c6;
   padding-top: 6.5rem;
   padding-bottom: 7rem;
+  position: relative;
   overflow: hidden;
 }
 
@@ -2117,12 +2119,104 @@ blockquote {
 }
 
 .footer__person {
-  z-index: 2;
+  z-index: 5;
   width: 40rem;
   max-width: none;
   height: auto;
   position: absolute;
   inset: auto 1% 0% auto;
+}
+
+.div-block-37384 {
+  display: none;
+}
+
+.div-block-37385 {
+  z-index: 3;
+  background-image: linear-gradient(#f4f1e8, #fff0 41%);
+  height: 3rem;
+  display: block;
+  position: absolute;
+  inset: 0% 0% auto;
+}
+
+.div-block-37386 {
+  z-index: 3;
+  height: 2.5rem;
+  position: absolute;
+  inset: auto 0% 0%;
+}
+
+.hero__date {
+  width: 27rem;
+  color: var(--red);
+  letter-spacing: -.01em;
+  margin-bottom: 1.3125rem;
+  margin-left: .25rem;
+  font-family: Comfortaa Variablefont Wght, Arial, sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  line-height: 1.23;
+}
+
+.pop-app {
+  display: none;
+}
+
+.pop-app__embet-form {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.pop-app__wrapper-form {
+  z-index: 5;
+  border-radius: 1.25rem;
+  width: 50%;
+  max-height: 90vh;
+  position: relative;
+  overflow: clip;
+}
+
+.pop-app__block-cross {
+  background-color: var(--red);
+  border-radius: 10rem;
+  justify-content: center;
+  align-items: center;
+  width: 3.75rem;
+  height: 3.75rem;
+  display: flex;
+  position: absolute;
+  inset: 1.56rem 1.56rem auto auto;
+}
+
+.pop-app__block-cross:hover {
+  background-color: #791d2c;
+}
+
+.div-block-37389 {
+  background-color: var(--white);
+  border-radius: 2px;
+  width: 60%;
+  height: 2px;
+}
+
+.pop-app__arrov {
+  background-color: var(--white);
+  border-radius: 2px;
+  width: 60%;
+  height: 2px;
+  transform: rotate(45deg);
+}
+
+.pop-app__arrov._2 {
+  position: absolute;
+  transform: rotate(-45deg);
+}
+
+.closs-popapp {
+  z-index: 2;
+  position: absolute;
+  inset: 0%;
 }
 
 @media screen and (min-width: 1280px) {
@@ -2297,6 +2391,10 @@ blockquote {
   .footer__person {
     right: -1rem;
   }
+
+  .pop-app__wrapper-form {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2383,10 +2481,10 @@ blockquote {
   }
 
   .hero__person {
-    width: 18.1875rem;
+    width: 40rem;
     bottom: 0;
-    left: 2.3125rem;
-    right: auto;
+    left: auto;
+    right: 50px;
   }
 
   .course-included-section {
@@ -2469,10 +2567,22 @@ blockquote {
   }
 
   .footer__person {
+    z-index: 1;
     width: 18.1875rem;
     bottom: 0;
     left: 2.3125rem;
     right: auto;
+  }
+
+  .hero__date {
+    width: 100%;
+    margin-bottom: 2.625rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+  }
+
+  .pop-app__wrapper-form {
+    width: 80%;
   }
 }
 
@@ -2532,7 +2642,7 @@ blockquote {
   }
 
   .hero {
-    min-height: 52rem;
+    min-height: 54rem;
   }
 
   .pop-app__wrapper {
@@ -2558,7 +2668,7 @@ blockquote {
 
   .hero__stage {
     min-height: 42rem;
-    padding-top: 1.32rem;
+    padding-top: 0;
   }
 
   .hero__logo-link {
@@ -2731,6 +2841,7 @@ blockquote {
   }
 
   .text-block-60 {
+    width: 90%;
     font-size: 1.25rem;
   }
 
@@ -2740,11 +2851,17 @@ blockquote {
   }
 
   .div-block-37382 {
-    grid-template-columns: 1fr .5fr;
+    grid-template-columns: .5fr .5fr;
+  }
+
+  .div-block-37383 {
+    z-index: 3;
   }
 
   .course-section {
-    padding-top: 3rem;
+    background-image: url('../images/bg.png');
+    background-position: 50% 6%;
+    padding-top: 5.6rem;
     padding-bottom: 3rem;
     overflow: hidden;
   }
@@ -2753,6 +2870,51 @@ blockquote {
     width: 18rem;
     left: auto;
     right: -5.6rem;
+  }
+
+  .div-block-37384 {
+    z-index: 3;
+    background-image: linear-gradient(180deg, #0000, var(--bg));
+    height: 2rem;
+    display: block;
+    position: absolute;
+    inset: auto 0% 0%;
+  }
+
+  .div-block-37385 {
+    z-index: 3;
+    background-image: linear-gradient(#f4f1e8, #fff0);
+    height: 1rem;
+    position: absolute;
+    inset: 0% 0% auto;
+  }
+
+  .div-block-37386 {
+    z-index: 3;
+    background-image: linear-gradient(#0000, #e7e3d4);
+    height: 1rem;
+    position: absolute;
+    inset: auto 0% 0%;
+  }
+
+  .hero__date {
+    margin-bottom: .925rem;
+  }
+
+  .pop-app__embet-form {
+    height: 100%;
+  }
+
+  .pop-app__wrapper-form {
+    width: 90%;
+    display: flex;
+  }
+
+  .pop-app__block-cross {
+    width: 2rem;
+    height: 2rem;
+    top: .7rem;
+    right: .7rem;
   }
 }
 
